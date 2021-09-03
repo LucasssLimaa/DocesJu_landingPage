@@ -1,0 +1,249 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: New Tegomin;
+}
+
+header{
+    background: palevioletred;
+    padding: 10px;
+    display: flex;
+
+    justify-content:  space-around;
+}
+
+header a{
+    text-decoration: none;
+}
+
+.controles{
+    display: grid;
+    
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 30px;
+}
+
+header p{
+    color: white;
+    font-size: 1.8em;
+    transition-property: border-bottom-color, border-bottom-width, font-size;
+    transition-duration: 0ms, 800ms, 500ms;
+}
+
+header p:hover{
+    font-size: 1.7em;
+}
+
+.logo{
+    border-radius: 50%;
+
+    transition-property: all;
+    transition-duration: 500ms;
+}
+
+.logo:hover{
+    height: 120px;
+    width: 120px;
+}
+
+.container{
+    height: 630px;
+    width: 100%;
+    background-image:url("images/bolo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    
+}
+
+.chamariz{
+    text-align: center;
+    position: relative;
+}
+
+.titulo{
+    font-family: New Tegomin;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: whitesmoke;
+    position: relative;
+    bottom: 60px;
+}
+
+.cards{
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    justify-content: space-evenly;
+}
+
+.card{
+    border: 4px solid palevioletred;
+    border-radius: 20px;
+    height: 240px;
+    width: 210px;
+
+    transition-property: all;
+    transition-duration: 500ms;
+}
+
+.card:hover{
+    padding-bottom: 20px;
+    background-color: palevioletred;
+    color: white;
+    height: 330px;
+    width: 270px;
+    font-size: 1.4em;
+}
+
+.card img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards p{
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.title_galery h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.galery img{
+    position: relative;
+    border-radius: 10px;
+   /* transition-property: all;
+    transition-duration: 500ms;*/
+}
+
+/*.galery img:hover{
+    width: 400px;
+    height: 350px;
+}*/
+
+.galery{
+    display: grid;
+    grid-template: auto auto / auto auto auto; 
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.social{
+    padding-top: 30px;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+
+.insta{
+    border: 2px solid #C13584;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 10px;
+
+    transition-property: background-color, color, padding;
+    transition-duration: 500ms;
+}
+
+.insta p{
+    display: inline-block;
+    text-align: center;
+}
+
+.insta:hover{
+    background-color: #C13584;
+    color: white;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+.insta img{
+    position: relative;
+    top: 8px;
+    right: 3px;
+}
+
+.depoimentos{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: purple;
+    height: 500px;
+}
+
+.cards_depoimentos{
+    position: relative;
+    bottom: 50px;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.depoimentos h1{
+    position: relative;
+    bottom: 50px;
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+}
+
+.depoimento{
+    border: 2px solid palevioletred;
+    height: 350px;
+    width: 310px;
+    border-radius: 10px;
+}
+
+.card_nome{
+    text-align: center;
+    color: palevioletred;
+    font-size: 1.4em;
+}
+
+.depoimento p{
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.aspas{
+    border: 2px solid palevioletred;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 30px;
+    background-color: palevioletred;
+    width: 60px;
+    height: 60px;
+}
+
+footer{
+    color: white;
+    background: palevioletred;
+    padding: 10px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: New Tegomin;
+    src: url(font/NewTegomin-Regular.ttf);
+}
