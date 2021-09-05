@@ -49,7 +49,7 @@ header p:hover{
 .container{
     height: 630px;
     width: 100%;
-    background-image:url("images/bolo.jpeg");
+    background-image:url("assets/images/bolo.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -123,14 +123,7 @@ header p:hover{
 .galery img{
     position: relative;
     border-radius: 10px;
-   /* transition-property: all;
-    transition-duration: 500ms;*/
 }
-
-/*.galery img:hover{
-    width: 400px;
-    height: 350px;
-}*/
 
 .galery{
     display: grid;
@@ -245,5 +238,5 @@ footer{
 
 @font-face {
     font-family: New Tegomin;
-    src: url(font/NewTegomin-Regular.ttf);
+    src: url(assets/font/NewTegomin-Regular.ttf);
 }
