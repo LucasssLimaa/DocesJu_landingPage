@@ -1,79 +1,81 @@
-body{
+body {
     padding: 0;
     margin: 0;
     font-family: New Tegomin;
 }
 
-header{
+header {
     background: palevioletred;
-    padding: 10px;
+    padding: 0.7%;
     display: flex;
 
-    justify-content:  space-around;
+    justify-content: space-around;
 }
 
-header a{
+header a {
     text-decoration: none;
 }
 
-.controles{
+.controles {
     display: grid;
-    
+
     grid-template-columns: auto auto auto;
     grid-column-gap: 30px;
 }
 
-header p{
+header p {
     color: white;
     font-size: 1.8em;
     transition-property: border-bottom-color, border-bottom-width, font-size;
     transition-duration: 0ms, 800ms, 500ms;
 }
 
-header p:hover{
+header p:hover {
     font-size: 1.7em;
 }
 
-.logo{
+.logo {
+    height: 90px;
+    width: 90px;
     border-radius: 50%;
 
     transition-property: all;
     transition-duration: 500ms;
 }
 
-.logo:hover{
+.logo:hover {
     height: 120px;
     width: 120px;
 }
 
-.container{
+.container {
     height: 630px;
     width: 100%;
-    background-image:url("assets/images/bolo.jpeg");
+    background-image: url("assets/images/bolo.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    
+
 }
 
-.chamariz{
+.chamariz {
     text-align: center;
     position: relative;
 }
 
-.titulo{
+.titulo {
     font-family: New Tegomin;
     font-size: 5rem;
     text-transform: uppercase;
     color: whitesmoke;
     position: relative;
-    bottom: 60px;
+    bottom: 10%;
 }
 
-.cards{
+.cards {
     position: relative;
     bottom: 100px;
     display: flex;
@@ -83,57 +85,56 @@ header p:hover{
     justify-content: space-evenly;
 }
 
-.card{
+.card {
     border: 4px solid palevioletred;
     border-radius: 20px;
-    height: 240px;
-    width: 210px;
+    height: 17%;
+    width: 15%;
 
     transition-property: all;
     transition-duration: 500ms;
 }
 
-.card:hover{
+.card:hover {
     padding-bottom: 20px;
     background-color: palevioletred;
     color: white;
-    height: 330px;
-    width: 270px;
+    height: 20%;
+    width: 19%;
     font-size: 1.4em;
 }
 
-.card img{
+.card img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.cards p{
+.cards p {
     position: relative;
-    bottom: 15px;
     text-align: center;
     font-size: 1.4em;
 }
 
-.title_galery h1{
+.title_galery h1 {
     text-align: center;
     font-size: 4rem;
 }
 
-.galery img{
+.galery img {
     position: relative;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
-.galery{
+.galery {
     display: grid;
-    grid-template: auto auto / auto auto auto; 
+    grid-template: auto auto / auto auto auto;
     justify-content: center;
-    grid-gap: 10px;
+    grid-gap: 1%;
 }
 
-.social{
-    padding-top: 30px;
+.social {
+    padding-top: 3%;
     display: flex;
 
     flex-direction: row;
@@ -141,44 +142,44 @@ header p:hover{
     margin: 10px;
 }
 
-.insta{
+.insta {
     border: 2px solid #C13584;
     border-radius: 10px;
-    padding: 5px;
+    padding: 0.6%;
     text-decoration: none;
     font-size: 1.2em;
-    margin: 10px;
+    margin: 1%;
+    text-decoration: none;
+    color: #C13584;
 
     transition-property: background-color, color, padding;
     transition-duration: 500ms;
 }
 
-.insta p{
+.insta p {
     display: inline-block;
     text-align: center;
 }
 
-.insta:hover{
+.insta:hover {
     background-color: #C13584;
     color: white;
-    padding-left: 20px;
-    padding-right: 15px;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
-.insta img{
+.insta img {
     position: relative;
-    top: 8px;
-    right: 3px;
+    top: 12%;
 }
 
-.depoimentos{
-    padding-top: 50px;
-    padding-bottom: 50px;
+.depoimentos {
+    padding-top: 4%;
+    padding-bottom: 3%;
     background-color: purple;
-    height: 500px;
 }
 
-.cards_depoimentos{
+.cards_depoimentos {
     position: relative;
     bottom: 50px;
     display: flex;
@@ -188,7 +189,7 @@ header p:hover{
     justify-content: space-evenly;
 }
 
-.depoimentos h1{
+.depoimentos h1 {
     position: relative;
     bottom: 50px;
     font-size: 4rem;
@@ -196,27 +197,27 @@ header p:hover{
     color: white;
 }
 
-.depoimento{
+.depoimento {
     border: 2px solid palevioletred;
-    height: 350px;
-    width: 310px;
+    height: 390px;
+    width: 300px;
     border-radius: 10px;
 }
 
-.card_nome{
+.card_nome {
     text-align: center;
     color: palevioletred;
     font-size: 1.4em;
 }
 
-.depoimento p{
+.depoimento p {
     color: white;
     text-align: center;
     font-size: 1.2em;
     padding: 5px;
 }
 
-.aspas{
+.aspas {
     border: 2px solid palevioletred;
     border-radius: 50%;
     display: block;
@@ -225,14 +226,14 @@ header p:hover{
     position: relative;
     bottom: 30px;
     background-color: palevioletred;
-    width: 60px;
-    height: 60px;
+    width: 20%;
+    height: 15%;
 }
 
-footer{
+footer {
     color: white;
     background: palevioletred;
-    padding: 10px;
+    padding: 1%;
     text-align: center;
 }
 
@@ -240,3 +241,5 @@ footer{
     font-family: New Tegomin;
     src: url(assets/font/NewTegomin-Regular.ttf);
 }
+
+@media screen and (max-width: 1023px) {}
