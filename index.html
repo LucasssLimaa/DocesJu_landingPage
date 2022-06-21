@@ -1,245 +1,107 @@
-body {
-    padding: 0;
-    margin: 0;
-    font-family: New Tegomin;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-header {
-    background: palevioletred;
-    padding: 0.7%;
-    display: flex;
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doces da Ju</title>
 
-    justify-content: space-around;
-}
+    <link href="style.css" rel="stylesheet">
 
-header a {
-    text-decoration: none;
-}
+</head>
 
-.controles {
-    display: grid;
+<body>
 
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 30px;
-}
+    <header>
+        <img class="logo" src="assets/images/logo_ofc2.png">
+        <div class="controles">
+            <a>
+                <p>Home</p>
+            </a>
+            <a>
+                <p>Galeria</p>
+            </a>
+            <a>
+                <p>Depoimentos</p>
+            </a>
+        </div>
+    </header>
 
-header p {
-    color: white;
-    font-size: 1.8em;
-    transition-property: border-bottom-color, border-bottom-width, font-size;
-    transition-duration: 0ms, 800ms, 500ms;
-}
+    <div class="container">
+        <div class=chamariz>
+            <h1 class="titulo">Os melhores doces estão aqui, venha conferir!</h1>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card bolos"><img src="assets/images/cake.png" width="100" height="95">
+            <p>Temos bolos de vários sabores e tamanhos, escolha já o seu!</p>
+        </div>
+        <div class="card brownies"><img src="assets/images/brownie.png" width="100" height="95">
+            <p>Temos brownies deliciosos feitos com os melhores igredientes!</p>
+        </div>
+        <div class="card tortas"><img src="assets/images/torta-de-maca.png" width="100" height="95">
+            <p>Temos as melhores tortas feitas com igredientes frescos!</p>
+        </div>
+    </div>
 
-header p:hover {
-    font-size: 1.7em;
-}
+    <div class="title_galery">
+        <h1>Nos acompanhe nas redes socias</h1>
+    </div>
+    <div class="galery">
+        <img src="assets/images/bolo_galery.png" width="300" height="250">
+        <img src="assets/images/brownie_galery.png" width="300" height="250">
+        <img src="assets/images/bolo_frida2.jpeg" width="300" height="250">
+        <img src="assets/images/brownie2_galery.png" width="300" height="250">
+        <img src="assets/images/bolo3_galery.png" width="300" height="250">
+        <img src="assets/images/brownie3_galery.png" width="300" height="250">
+    </div>
+    <div class="social">
+        <a class="insta" href="https://www.instagram.com/confeitariacomafeto/"><img src="assets/images/insta_logo.svg"
+                height="30" width="30">
+            <p>@confeitariacomafeto</p>
+        </a>
+        <a class="insta" href="https://www.instagram.com/ju.jurodrigues/"><img src="assets/images/insta_logo.svg"
+                height="30" width="30">
+            <p>@ju.jurodrigues</p>
+        </a>
+    </div>
 
-.logo {
-    height: 90px;
-    width: 90px;
-    border-radius: 50%;
+    <div class="depoimentos">
+        <h1>Depoimentos de nossos clientes!</h1>
+        <div class="cards_depoimentos">
+            <div class="depoimento"><img class="aspas" src="assets/images/aspas_preta.png" height="50" width="50">
+                <div class="card_nome">Felipe Xavier</div>
+                <p>"Nunca vi nada parecido antes, já paguei muito caro por brownies e nunca alcançavam minhas
+                    expectativas,
+                    mas essa loja consegue entregar o melhor brownie por um preço super justo. melhor custo benefício"
+                </p>
+            </div>
+            <div class="depoimento"><img class="aspas" src="assets/images/aspas_preta.png" height="50" width="50">
+                <div class="card_nome">Thiago Ramos</div>
+                <p>"Encomendei um bolo pela primeira vez dessa loja na semana passada, para a festa da minha filha. O
+                    bolo era tudo de bom, todos na festa amaram e perguntaram onde foi
+                    feito. Já sei onde pedir na próxima vez."</p>
+            </div>
+            <div class="depoimento"><img class="aspas" src="assets/images/aspas_preta.png" height="50" width="50">
+                <div class="card_nome">Marisol Franco</div>
+                <p>"Ju é a melhor boleira que conheço, todos seus bolos são
+                    apreciados e muito solicitados por todos nós. Seu Brownie, não conheço outro melhor...Tudo que ela
+                    faz põe muito carinho e dedicação. Ela é tão doce, quanto seus bolos!!"</p>
+            </div>
+            <div class="depoimento"><img class="aspas" src="assets/images/aspas_preta.png" height="50" width="50">
+                <div class="card_nome">Leticia Amaral</div>
+                <p>"Não sei como não tinha pedido nessa loja ainda, são os melhores doces que já comi, todos feitos com
+                    muita qualidade, fiquei super apaixonada, agora sei que posso pedir sempre, pois não vão
+                    decepcionar."</p>
+            </div>
+        </div>
+    </div>
 
-    transition-property: all;
-    transition-duration: 500ms;
-}
+    <footer>
+        <p>Copyright © 2021 Lucas Lima. All Rights Reserved | Política de Privacidade | Termos de Serviço | Ajuda</p>
+    </footer>
 
-.logo:hover {
-    height: 120px;
-    width: 120px;
-}
+</body>
 
-.container {
-    height: 630px;
-    width: 100%;
-    background-image: url("assets/images/bolo.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-
-}
-
-.chamariz {
-    text-align: center;
-    position: relative;
-}
-
-.titulo {
-    font-family: New Tegomin;
-    font-size: 5rem;
-    text-transform: uppercase;
-    color: whitesmoke;
-    position: relative;
-    bottom: 10%;
-}
-
-.cards {
-    position: relative;
-    bottom: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    justify-content: space-evenly;
-}
-
-.card {
-    border: 4px solid palevioletred;
-    border-radius: 20px;
-    height: 17%;
-    width: 15%;
-
-    transition-property: all;
-    transition-duration: 500ms;
-}
-
-.card:hover {
-    padding-bottom: 20px;
-    background-color: palevioletred;
-    color: white;
-    height: 20%;
-    width: 19%;
-    font-size: 1.4em;
-}
-
-.card img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cards p {
-    position: relative;
-    text-align: center;
-    font-size: 1.4em;
-}
-
-.title_galery h1 {
-    text-align: center;
-    font-size: 4rem;
-}
-
-.galery img {
-    position: relative;
-    border-radius: 50%;
-}
-
-.galery {
-    display: grid;
-    grid-template: auto auto / auto auto auto;
-    justify-content: center;
-    grid-gap: 1%;
-}
-
-.social {
-    padding-top: 3%;
-    display: flex;
-
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px;
-}
-
-.insta {
-    border: 2px solid #C13584;
-    border-radius: 10px;
-    padding: 0.6%;
-    text-decoration: none;
-    font-size: 1.2em;
-    margin: 1%;
-    text-decoration: none;
-    color: #C13584;
-
-    transition-property: background-color, color, padding;
-    transition-duration: 500ms;
-}
-
-.insta p {
-    display: inline-block;
-    text-align: center;
-}
-
-.insta:hover {
-    background-color: #C13584;
-    color: white;
-    padding-left: 1%;
-    padding-right: 1%;
-}
-
-.insta img {
-    position: relative;
-    top: 12%;
-}
-
-.depoimentos {
-    padding-top: 4%;
-    padding-bottom: 3%;
-    background-color: purple;
-}
-
-.cards_depoimentos {
-    position: relative;
-    bottom: 50px;
-    display: flex;
-
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-evenly;
-}
-
-.depoimentos h1 {
-    position: relative;
-    bottom: 50px;
-    font-size: 4rem;
-    text-align: center;
-    color: white;
-}
-
-.depoimento {
-    border: 2px solid palevioletred;
-    height: 390px;
-    width: 300px;
-    border-radius: 10px;
-}
-
-.card_nome {
-    text-align: center;
-    color: palevioletred;
-    font-size: 1.4em;
-}
-
-.depoimento p {
-    color: white;
-    text-align: center;
-    font-size: 1.2em;
-    padding: 5px;
-}
-
-.aspas {
-    border: 2px solid palevioletred;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    bottom: 30px;
-    background-color: palevioletred;
-    width: 20%;
-    height: 15%;
-}
-
-footer {
-    color: white;
-    background: palevioletred;
-    padding: 1%;
-    text-align: center;
-}
-
-@font-face {
-    font-family: New Tegomin;
-    src: url(assets/font/NewTegomin-Regular.ttf);
-}
-
-@media screen and (max-width: 1023px) {}
+</html>
